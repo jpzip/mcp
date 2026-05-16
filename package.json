@@ -1,0 +1,50 @@
+{
+  "name": "@jpzip/mcp-server-jpzip",
+  "version": "0.1.0",
+  "description": "MCP server for Japanese postal codes — backed by jpzip.nadai.dev (static CDN) with local persistent cache for offline use",
+  "type": "module",
+  "bin": {
+    "mcp-server-jpzip": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "japan",
+    "postal-code",
+    "zipcode",
+    "郵便番号",
+    "address",
+    "claude"
+  ],
+  "author": "nadai",
+  "license": "MIT",
+  "homepage": "https://jpzip.nadai.dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jpzip/mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jpzip/mcp/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "@jpzip/jpzip": "^0.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.2"
+  }
+}
