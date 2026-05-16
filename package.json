@@ -1,7 +1,7 @@
 {
   "name": "@jpzip/mcp-server-jpzip",
   "version": "0.1.0",
-  "description": "MCP server for Japanese postal codes — backed by jpzip.nadai.dev (static CDN) with local persistent cache for offline use",
+  "description": "Stateless MCP server for Japanese postal codes — backed by jpzip.nadai.dev (Cloudflare-hosted static CDN)",
   "type": "module",
   "bin": {
     "mcp-server-jpzip": "dist/index.js"
